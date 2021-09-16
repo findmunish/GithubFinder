@@ -6,7 +6,7 @@ import {
     GET_REPOS
 } from '../types'
 
-export default (state, action) => {
+const GitHubReducer = (state, action) => {
     switch(action.type) {
         case SEARCH_USERS:
             // return the current state and hence the spread operator.
@@ -44,4 +44,4 @@ export default (state, action) => {
     }
 }
 
-
+export default GitHubReducer;
